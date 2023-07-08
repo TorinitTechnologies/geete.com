@@ -1,12 +1,12 @@
-import Button from '@mui/material/Button';
+ import { StyledButton } from './styles';
 
 function CustomButton(props: ButtonProps) {
-    const { title, variant,text } = props;
+    const { title, variant, text } = props;
     return (
-        <Button
-            title={'title'}
+        <StyledButton
+            title={title}
             variant={variant}
-        >{text}</Button>
+        >{text}</StyledButton>
     )
 }
 

@@ -1,19 +1,21 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Button from './shared/atoms/Button'
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-});
 
 
 
 function App() {
+
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+    },
+  });
+
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-       <Button
+      <Button
         text='Button'
         title='Button'
         variant='outlined'
