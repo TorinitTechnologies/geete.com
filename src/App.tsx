@@ -1,8 +1,7 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import Button from './shared/atoms/Button'
-
-
+import Button from '@atoms/Button'
+ 
 
 function App() {
 
@@ -11,8 +10,7 @@ function App() {
       mode: 'dark',
     },
   });
-
-  return (
+   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Button
