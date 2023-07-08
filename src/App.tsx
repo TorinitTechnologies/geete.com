@@ -1,6 +1,7 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Button from '@atoms/Button'
+import BasicCard from '@atoms/Card';
  
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         title='Button'
         variant='outlined'
       />
+      <BasicCard/>
     </ThemeProvider>
   );
 }
