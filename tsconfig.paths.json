@@ -2,8 +2,6 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-     
-      
       "@atoms/*": [
         "src/shared/atoms/*"
       ],
