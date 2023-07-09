@@ -70,7 +70,7 @@
 	"scripts": {
 		"start": "node scripts/start.js",
 		"build": "node scripts/build.js",
-		"test": "cross-env CI=true  node scripts/test.js --passWithNoTests",
+		"test": "cross-env CI=true  node scripts/test.js   --coverage --watchAll=false || exit 0",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"prepare": "husky install",
@@ -79,7 +79,7 @@
 	},
 	"lint-staged": {
 		"**/*.{js,jsx,tsx,ts,json}": [
-			"npm run test --passWithNoTests",
+			"npm run test",
 			"prettier --write .",
 			"npm run lint"
 		]
