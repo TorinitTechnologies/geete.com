@@ -3,7 +3,8 @@ import Card from '../index';
 
 describe('Card', () => {
 	it('card should render', async () => {
-		render(<Card dataTestId={'card'} />);
+		const childElement = <div>Sample Card</div>;
+		render(<Card dataTestId={'card'} children={childElement} />);
 		const btn = await screen.findByTestId('card');
 		expect(btn).toBeInTheDocument();
 	});

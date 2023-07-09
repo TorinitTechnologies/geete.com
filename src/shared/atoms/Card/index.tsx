@@ -2,10 +2,10 @@ import CardContent from '@mui/material/CardContent';
 import { StyledCard } from './styles';
 
 function CustomCard(props: CardProps) {
-	const { dataTestId } = props;
+	const { dataTestId, children } = props;
 	return (
 		<StyledCard data-testid={dataTestId}>
-			<CardContent></CardContent>
+			<CardContent>{children}</CardContent>
 		</StyledCard>
 	);
 }
