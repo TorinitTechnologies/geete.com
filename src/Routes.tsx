@@ -1,5 +1,5 @@
 import { Routes as BaseRoutes, BrowserRouter, Route } from 'react-router-dom';
-import AuthMiddleWare from './middleware/AuthMiddleWare';
+import AuthMiddleWare from '@middleware/AuthMiddleWare';
 import { useSelector } from 'react-redux';
 
 function Routes() {

@@ -189,7 +189,8 @@
 			"^@layouts(.*)$": "<rootDir>/src/layouts$1",
 			"^@pages(.*)$": "<rootDir>/src/pages$1",
 			"^@store(.*)$": "<rootDir>/src/store$1",
-			"^@testUtils(.*)$": "<rootDir>/src/testUtils$1"
+			"^@testUtils(.*)$": "<rootDir>/src/testUtils$1",
+			"^@middleware(.*)$": "<rootDir>/src/middleware$1"
 		},
 		"moduleFileExtensions": [
 			"web.js",
