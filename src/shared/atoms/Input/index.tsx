@@ -10,7 +10,7 @@ function Input(props: InputProps) {
             label={label}
             variant={variant}
             data-testid={dataTestId}
-            type={type}
+                                                 type={type}
             inputProps={inputProps}
         />
     )
