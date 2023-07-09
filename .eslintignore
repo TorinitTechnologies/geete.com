@@ -1,0 +1,3 @@
+**/*.js
+/src/stories/
+react-app-env.d.ts

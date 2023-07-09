@@ -5,5 +5,6 @@ declare interface InputProps {
 	variant: 'outlined' | 'filled' | 'standard';
 	dataTestId: string;
 	type?: string;
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	inputProps?: any;
 }

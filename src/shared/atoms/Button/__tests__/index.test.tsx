@@ -19,7 +19,9 @@ describe('Button', () => {
 	});
 
 	it('it should call callback method on click', async () => {
-		const onClick = jest.fn((e: React.MouseEvent<HTMLElement>) => {});
+		const onClick = jest.fn((e: React.MouseEvent<HTMLElement>) => {
+			console.log(e);
+		});
 		render(
 			<Button
 				title={'Button'}

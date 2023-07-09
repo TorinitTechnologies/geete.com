@@ -74,9 +74,13 @@
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"prepare": "husky install",
- 		"format": "prettier . --write"
+		"lint": "eslint . --fix --max-warnings=0",
+		"format": "prettier . --write"
 	},
-	 
+	"lint-staged": {
+		"*.js": "eslint --fix ",
+		"*.{js,css,md,html,json}": "prettier --cache --write"
+	},
 	"eslintConfig": {
 		"extends": [
 			"react-app",
