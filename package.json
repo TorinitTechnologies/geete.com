@@ -9,6 +9,7 @@
 		"@mui/material": "^5.13.7",
 		"@mui/styled-engine-sc": "^5.12.0",
 		"@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
+		"@reduxjs/toolkit": "^1.9.5",
 		"@svgr/webpack": "^5.5.0",
 		"@testing-library/jest-dom": "^5.14.1",
 		"@testing-library/react": "^13.0.0",
@@ -50,6 +51,7 @@
 		"react-app-polyfill": "^3.0.0",
 		"react-dev-utils": "^12.0.1",
 		"react-dom": "^18.2.0",
+		"react-redux": "^8.1.1",
 		"react-refresh": "^0.11.0",
 		"react-router-dom": "^6.14.1",
 		"resolve": "^1.20.0",
@@ -183,7 +185,9 @@
 		"moduleNameMapper": {
 			"^react-native$": "react-native-web",
 			"^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
-			"^@atoms(.*)$": "<rootDir>/src/shared/atoms$1"
+			"^@atoms(.*)$": "<rootDir>/src/shared/atoms$1",
+			"^@layouts(.*)$": "<rootDir>/src/layouts$1",
+			"^@pages(.*)$": "<rootDir>/src/pages$1"
 		},
 		"moduleFileExtensions": [
 			"web.js",

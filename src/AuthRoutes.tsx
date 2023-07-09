@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import SignInPage from './pages/SignInPage';
-import AuthLayout from './layouts/AuthLayout';
+import SignInPage from '@pages/SignInPage';
+import AuthLayout from '@layouts/AuthLayout';
 
 function AuthRoutes() {
 	return (

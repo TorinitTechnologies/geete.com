@@ -2,7 +2,9 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"@atoms/*": ["src/shared/atoms/*"]
+			"@atoms/*": ["src/shared/atoms/*"],
+			"@layouts/*": ["src/layouts/*"],
+			"@pages/*": ["src/pages/*"]
 		}
 	}
 }

@@ -4,7 +4,7 @@ import { Routes as BaseRoutes, BrowserRouter, Route } from 'react-router-dom';
 import AuthMiddleWare from '../index';
 
 describe('AuthMiddleWare', () => {
-	it('AuthMiddleWare should render', async () => {
+	it('AuthMiddleWare auth_layout should render', async () => {
 		render(
 			<BrowserRouter>
 				<BaseRoutes>
@@ -13,6 +13,18 @@ describe('AuthMiddleWare', () => {
 			</BrowserRouter>
 		);
 		const authLayout = await screen.findByTestId('auth_layout');
+		expect(authLayout).toBeInTheDocument();
+	});
+
+	it('AuthMiddleWare app_layout should render', async () => {
+		render(
+			<BrowserRouter>
+				<BaseRoutes>
+					<Route path="/" element={<AuthMiddleWare isLoggedIn={true} />} />
+				</BaseRoutes>
+			</BrowserRouter>
+		);
+		const authLayout = await screen.findByTestId('app_layout');
 		expect(authLayout).toBeInTheDocument();
 	});
 });

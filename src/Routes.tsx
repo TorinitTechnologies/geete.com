@@ -5,7 +5,7 @@ function Routes() {
 	return (
 		<BrowserRouter>
 			<BaseRoutes>
-				<Route path="/" element={<AuthMiddleWare isLoggedIn={true} />} />
+				<Route path="/" element={<AuthMiddleWare isLoggedIn={false} />} />
 			</BaseRoutes>
 		</BrowserRouter>
 	);
