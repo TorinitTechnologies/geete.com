@@ -26,5 +26,7 @@ module.exports = {
 	},
 	plugins: ['@typescript-eslint', 'react'],
 
-	rules: {},
+	rules: {
+		'no-console': 1,
+	},
 };
