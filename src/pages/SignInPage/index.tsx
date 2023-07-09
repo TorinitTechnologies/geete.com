@@ -1,7 +1,7 @@
 import React from 'react';
 
 function SignInPage() {
-	return <div>SignInPage</div>;
+	return <div data-testid={'sign_in_page'}>SignInPage</div>;
 }
 
 export default SignInPage;

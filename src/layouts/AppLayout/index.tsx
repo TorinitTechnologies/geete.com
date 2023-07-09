@@ -1,13 +1,13 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-function HomePage() {
+function AppLayout() {
 	return (
-		<div data-testid={'home_page'}>
-			HomePage
+		<div data-testid={'app_layout'}>
+			AppLayout
 			<Outlet />
 		</div>
 	);
 }
 
-export default HomePage;
+export default AppLayout;

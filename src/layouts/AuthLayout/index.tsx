@@ -1,13 +1,13 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-function HomePage() {
+function AuthLayout() {
 	return (
-		<div data-testid={'home_page'}>
-			HomePage
+		<div data-testid={'auth_layout'}>
+			AuthLayout
 			<Outlet />
 		</div>
 	);
 }
 
-export default HomePage;
+export default AuthLayout;
