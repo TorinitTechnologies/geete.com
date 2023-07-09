@@ -14,7 +14,7 @@ describe('Button', () => {
 			/>
 		);
 		const btn = await screen.findByTestId('button');
-		expect(btn).toBeTruthy();
+		expect(btn).toBeInTheDocument();
 		expect(btn).toHaveTextContent('Button');
 	});
 

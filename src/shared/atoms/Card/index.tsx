@@ -1,9 +1,10 @@
 import CardContent from '@mui/material/CardContent';
 import { StyledCard } from './styles';
 
-function CustomCard() {
+function CustomCard(props: CardProps) {
+	const { dataTestId } = props;
 	return (
-		<StyledCard>
+		<StyledCard data-testid={dataTestId}>
 			<CardContent></CardContent>
 		</StyledCard>
 	);
