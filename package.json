@@ -78,8 +78,10 @@
 		"format": "prettier . --write"
 	},
 	"lint-staged": {
-		"*.js": "eslint --fix ",
-		"*.{js,css,md,html,json}": "prettier --cache --write"
+		"**/*.{js,jsx,tsx,ts,json}": [
+			"prettier --write .",
+			"eslint ."
+		]
 	},
 	"eslintConfig": {
 		"extends": [
