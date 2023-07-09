@@ -1,11 +1,8 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@atoms/*": [
-        "src/shared/atoms/*"
-      ],
-      
-    }
-  }
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@atoms/*": ["src/shared/atoms/*"]
+		}
+	}
 }

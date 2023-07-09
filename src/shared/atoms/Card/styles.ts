@@ -1,5 +1,4 @@
-import Card from '@mui/material/Card'
-import styled from 'styled-components'
+import Card from '@mui/material/Card';
+import styled from 'styled-components';
 
-
-export const StyledCard=styled(Card)``
+export const StyledCard = styled(Card)``;
