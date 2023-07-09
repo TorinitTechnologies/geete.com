@@ -4,7 +4,7 @@ import Routes from './Routes';
 import { useSelector } from 'react-redux';
 
 function App() {
-	const { themeType } = useSelector((state: any) => state.theme);
+	const { themeType } = useSelector((state: Store) => state.theme);
 	const darkTheme = createTheme({
 		palette: {
 			mode: themeType,

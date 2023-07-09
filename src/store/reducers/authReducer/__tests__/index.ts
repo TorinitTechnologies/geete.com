@@ -1,4 +1,4 @@
-import authReducer, { setToken, AuthState } from '..';
+import authReducer, { setToken } from '..';
 
 describe('AuthReducer', () => {
 	const state: AuthState = {

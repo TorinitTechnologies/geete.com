@@ -3,7 +3,7 @@ import AuthMiddleWare from '@middleware/AuthMiddleWare';
 import { useSelector } from 'react-redux';
 
 function Routes() {
-	const { token } = useSelector((state: any) => state.auth);
+	const { token } = useSelector((state: Store) => state.auth);
 	return (
 		<BrowserRouter>
 			<BaseRoutes>
