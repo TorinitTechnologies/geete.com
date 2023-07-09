@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require('fs');
+const getAliases=require('./aliases')
 const path = require('path');
 const webpack = require('webpack');
 const resolve = require('resolve');
@@ -311,7 +312,7 @@ module.exports = function (webpackEnv) {
         .filter(ext => useTypeScript || !ext.includes('ts')),
       alias: {
 
-        "@atoms":path.resolve(__dirname, '../src/shared/atoms'),
+        ...getAliases(),
          // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',

@@ -107,6 +107,7 @@
     "prop-types": "^15.8.1",
     "react-scripts": "^5.0.1",
     "storybook": "^7.0.26",
+    "ts-jest": "^29.1.1",
     "webpack": "^5.88.1"
   },
   "jest": {
@@ -140,7 +141,8 @@
     "modulePaths": [],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+      "^@atoms(.*)$": "<rootDir>/src/shared/atoms$1"
     },
     "moduleFileExtensions": [
       "web.js",
