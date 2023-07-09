@@ -143,7 +143,10 @@
 		"collectCoverageFrom": [
 			"src/**/*.{js,jsx,ts,tsx}",
 			"!src/**/*.d.ts",
-			"!src/**/*.stories.tsx"
+			"!src/**/*.stories.tsx",
+			"!src/stories/**/*",
+			"!src/index.tsx",
+			"!src/reportWebVitals.ts"
 		],
 		"coverageThreshold": {
 			"global": {
