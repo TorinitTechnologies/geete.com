@@ -5,7 +5,8 @@
 			"@atoms/*": ["src/shared/atoms/*"],
 			"@layouts/*": ["src/layouts/*"],
 			"@pages/*": ["src/pages/*"],
-			"@store/*": ["src/store/*"]
+			"@store/*": ["src/store/*"],
+			"@testUtils/*": ["src/testUtils/*"]
 		}
 	}
 }

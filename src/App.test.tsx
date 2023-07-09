@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react';
 import App from './App';
-import { WrapRedux } from './testUtils';
+import { ReduxWrapper } from './testUtils';
 
 test('renders learn react link', () => {
 	render(
-		<WrapRedux>
+		<ReduxWrapper>
 			<App />
-		</WrapRedux>
+		</ReduxWrapper>
 	);
 });

@@ -188,7 +188,8 @@
 			"^@atoms(.*)$": "<rootDir>/src/shared/atoms$1",
 			"^@layouts(.*)$": "<rootDir>/src/layouts$1",
 			"^@pages(.*)$": "<rootDir>/src/pages$1",
-			"^@store(.*)$": "<rootDir>/src/store$1"
+			"^@store(.*)$": "<rootDir>/src/store$1",
+			"^@testUtils(.*)$": "<rootDir>/src/testUtils$1"
 		},
 		"moduleFileExtensions": [
 			"web.js",
