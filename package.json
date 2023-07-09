@@ -70,20 +70,16 @@
 	"scripts": {
 		"start": "node scripts/start.js",
 		"build": "node scripts/build.js",
-		"test": "node scripts/test.js",
+		"test": "cross-env CI=true  node scripts/test.js",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"prepare": "husky install",
 		"lint": "eslint . --fix --max-warnings=0",
 		"format": "prettier . --write"
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "CI=true npm run test"
-		}
-	},
 	"lint-staged": {
 		"**/*.{js,jsx,tsx,ts,json}": [
+			"npm run test",
 			"prettier --write .",
 			"eslint ."
 		]
@@ -119,6 +115,7 @@
 		"@storybook/testing-library": "^0.0.14-next.2",
 		"@typescript-eslint/eslint-plugin": "^5.50.0",
 		"babel-plugin-named-exports-order": "^0.0.2",
+		"cross-env": "^7.0.3",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-config-standard-with-typescript": "^36.0.0",
 		"eslint-plugin-import": "^2.25.2",

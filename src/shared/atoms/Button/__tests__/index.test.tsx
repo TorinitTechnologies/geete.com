@@ -20,7 +20,7 @@ describe('Button', () => {
 
 	it('it should call callback method on click', async () => {
 		const onClick = jest.fn((e: React.MouseEvent<HTMLElement>) => {
-			console.log(e);
+			// console.log(e);
 		});
 		render(
 			<Button
