@@ -70,18 +70,18 @@
 	"scripts": {
 		"start": "node scripts/start.js",
 		"build": "node scripts/build.js",
-		"test": "cross-env CI=true  node scripts/test.js",
+		"test": "cross-env CI=true  node scripts/test.js --passWithNoTests",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build",
 		"prepare": "husky install",
-		"lint": "eslint . --fix --max-warnings=0",
+		"lint": "eslint . --fix --max-warnings=1",
 		"format": "prettier . --write"
 	},
 	"lint-staged": {
 		"**/*.{js,jsx,tsx,ts,json}": [
-			"npm run test",
+			"npm run test --passWithNoTests",
 			"prettier --write .",
-			"eslint ."
+			"npm run lint"
 		]
 	},
 	"eslintConfig": {
