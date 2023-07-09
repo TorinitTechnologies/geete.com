@@ -2,8 +2,7 @@ import { StyledTextField } from './styles';
 
 function Input(props: InputProps) {
 	const { id, name, label, variant, dataTestId, type, inputProps } = props;
-	const s = '';
-	return (
+ 	return (
 		<StyledTextField
 			id={id}
 			name={name}
