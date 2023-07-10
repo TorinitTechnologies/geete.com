@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 
 function Routes() {
 	const { token } = useSelector((state: Store) => state.auth);
+
 	return (
 		<BrowserRouter>
 			<BaseRoutes>
