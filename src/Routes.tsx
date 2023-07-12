@@ -8,7 +8,7 @@ function Routes() {
 	return (
 		<BrowserRouter>
 			<BaseRoutes>
-				<Route path="/" element={<AuthMiddleWare isLoggedIn={!!token} />} />
+				<Route path="/*" element={<AuthMiddleWare isLoggedIn={!!token} />} />
 			</BaseRoutes>
 		</BrowserRouter>
 	);
