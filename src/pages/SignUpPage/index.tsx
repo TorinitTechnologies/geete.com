@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SignUpPage = () => {
-	return <div>SignUpPage</div>;
+	return <div data-testid={'sign_up_page'}>SignUpPage</div>;
 };
 
 export default SignUpPage;

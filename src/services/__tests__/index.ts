@@ -7,7 +7,7 @@ describe('Service Tests', () => {
 	it('should return response for given url', async () => {
 		const dummyURL = 'api/users';
 		const users = [{ id: 1, name: 'test' }];
-		(axios.get as jest.Mock).mockResolvedValue(users);
+		(axios.get as jest.Mock).mockResolvedValue({ data: users });
 		const res = await get(dummyURL);
 		expect(res).toEqual(users);
 	});
