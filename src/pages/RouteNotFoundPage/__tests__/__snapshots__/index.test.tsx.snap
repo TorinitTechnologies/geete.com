@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Not Found Tests renders correctly 1`] = `
+<div
+  data-testid="page_not_found"
+>
+  RouteNotFoundPage
+</div>
+`;
