@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import HomePage from '../index';
 
@@ -17,5 +17,10 @@ describe('HomePage', () => {
 		render(<HomePage />);
 		const logOutButton = await screen.findByTestId('log_out_btn');
 		expect(logOutButton).toBeInTheDocument();
+	});
+	it('should have log out button', async () => {
+		render(<HomePage />);
+		const logOutButton = await screen.findByTestId('log_out_btn');
+		fireEvent.click(logOutButton);
 	});
 });
