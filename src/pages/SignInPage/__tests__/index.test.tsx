@@ -1,3 +1,9 @@
+const mockedUsedNavigate = jest.fn();
+jest.mock('react-router-dom', () => ({
+	...jest.requireActual('react-router-dom'),
+	useNavigate: () => mockedUsedNavigate,
+}));
+
 import { fireEvent, render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 
@@ -53,5 +59,13 @@ describe('SignInPage', () => {
 			const errorMessage = await screen.queryByTestId('email_error');
 			expect(errorMessage).toBeFalsy();
 		}
+	});
+
+	it('should show enter password validation message', async () => {
+		render(<SignInPage />);
+		const loginButton = await screen.findByTestId('login_button');
+		await fireEvent.click(loginButton);
+		const errorMessage = await screen.findByTestId('password_error');
+		expect(errorMessage).toBeInTheDocument();
 	});
 });

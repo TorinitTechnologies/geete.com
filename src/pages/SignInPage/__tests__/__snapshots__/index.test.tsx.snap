@@ -5,7 +5,7 @@ exports[`SignInPage renders correctly 1`] = `
   data-testid="sign_in_page"
 >
   <div
-    className="MuiFormControl-root MuiTextField-root sc-bdvumH css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+    className="MuiFormControl-root MuiTextField-root sc-gsDKeI css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
     data-testid="email"
   >
     <label
@@ -49,7 +49,7 @@ exports[`SignInPage renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="MuiFormControl-root MuiTextField-root sc-bdvumH css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+    className="MuiFormControl-root MuiTextField-root sc-gsDKeI css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
     data-testid="password"
   >
     <label
@@ -93,7 +93,7 @@ exports[`SignInPage renders correctly 1`] = `
     </div>
   </div>
   <button
-    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-gsDKeI css-sghohy-MuiButtonBase-root-MuiButton-root"
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-bdvumH css-sghohy-MuiButtonBase-root-MuiButton-root"
     data-testid="login_button"
     disabled={false}
     id="login"

@@ -1,27 +1,27 @@
-import Input from '@atoms/Input';
+import { useFormik } from 'formik';
+import { useNavigate } from 'react-router-dom';
+
 import Button from '@atoms/Button';
-import { useState } from 'react';
+import Input from '@atoms/Input';
+
+import { getLoginSchema } from './helper';
 
 function SignInPage() {
-	const [credentials, setCredentials] = useState<SignInFields>({
-		email: null,
-		password: null,
-	});
-	const [errors, setErrors] = useState<SignInFields>({
-		email: null,
-		password: null,
-	});
+	const navigate = useNavigate();
 
 	const onLogin = () => {
-		if (!credentials.email) {
-			setErrors({ ...errors, email: 'Please enter email' });
-		}
+		navigate('/');
 	};
 
-	const onFieldChange = (e: any) => {
-		const { value, id } = e.target;
-		setCredentials({ ...credentials, [id]: value });
-	};
+	const loginSchema = getLoginSchema();
+
+	const formik = useFormik({
+		validationSchema: loginSchema,
+		initialValues: { email: null, password: null },
+		onSubmit: onLogin,
+	});
+
+	const { errors, handleChange, touched, handleSubmit } = formik;
 
 	return (
 		<div data-testid={'sign_in_page'}>
@@ -32,8 +32,8 @@ function SignInPage() {
 				dataTestId={'email'}
 				variant={'outlined'}
 				errorDataTestId={'email_error'}
-				error={errors.email || ''}
-				onChange={onFieldChange}
+				error={(touched.email && errors.email) || ''}
+				onChange={handleChange}
 			/>
 			<Input
 				id={'password'}
@@ -42,7 +42,9 @@ function SignInPage() {
 				dataTestId={'password'}
 				variant={'outlined'}
 				type={'password'}
-				onChange={onFieldChange}
+				onChange={handleChange}
+				errorDataTestId={'password_error'}
+				error={(touched.password && errors.password) || ''}
 			/>
 			<Button
 				id={'login'}
@@ -51,7 +53,7 @@ function SignInPage() {
 				variant={'contained'}
 				title={'Login'}
 				text={'Login'}
-				onClick={onLogin}
+				onClick={handleSubmit}
 			/>
 		</div>
 	);
