@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignInPage renders correctly 1`] = `
+<div
+  data-testid="sign_in_page"
+>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-bdvumH css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+    data-testid="email"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink={false}
+      htmlFor="email"
+      id="email-label"
+    >
+      Enter Email
+    </label>
+    <div
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+        disabled={false}
+        id="email"
+        name="email"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+      />
+      <fieldset
+        aria-hidden={true}
+        className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="css-yjsfm1"
+        >
+          <span>
+            Enter Email
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <div
+    className="MuiFormControl-root MuiTextField-root sc-bdvumH css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+    data-testid="password"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink={false}
+      htmlFor="password"
+      id="password-label"
+    >
+      Enter Password
+    </label>
+    <div
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+        disabled={false}
+        id="password"
+        name="password"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="password"
+      />
+      <fieldset
+        aria-hidden={true}
+        className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="css-yjsfm1"
+        >
+          <span>
+            Enter Password
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium sc-gsDKeI css-sghohy-MuiButtonBase-root-MuiButton-root"
+    data-testid="login_button"
+    disabled={false}
+    id="login"
+    name="login"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onContextMenu={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    title="Login"
+    type="button"
+  >
+    Login
+  </button>
+</div>
+`;

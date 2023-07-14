@@ -80,7 +80,8 @@
 		"build-storybook": "storybook build",
 		"prepare": "husky install",
 		"lint": "eslint  --ext .js --fix --max-warnings=1",
-		"format": "prettier . --write"
+		"format": "prettier . --write",
+		"dev:test": "jest --silent --watch"
 	},
 	"lint-staged": {
 		"**/*.{js,jsx,tsx,ts,json}": [
