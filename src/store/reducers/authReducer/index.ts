@@ -9,7 +9,7 @@ export const themeSlice = createSlice({
 	name: 'theme',
 	initialState,
 	reducers: {
-		setToken: (state, action: PayloadAction<string>) => {
+		setToken: (state, action: PayloadAction<string | null>) => {
 			state.token = action.payload;
 		},
 	},

@@ -4,6 +4,30 @@ exports[`HomePage renders correctly 1`] = `
 <div
   data-testid="home_page"
 >
-  HomePage
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium sc-bdvumH css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+    data-testid="log_out_btn"
+    disabled={false}
+    id="logout"
+    name="logout"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onContextMenu={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    title="Logout"
+    type="button"
+  >
+    Logout
+  </button>
 </div>
 `;

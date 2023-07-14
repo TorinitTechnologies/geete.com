@@ -4,12 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import Button from '@atoms/Button';
 import Input from '@atoms/Input';
 
+import { makeUserLoggedIn } from '@utils/authUtils/index';
 import { getLoginSchema } from './helper';
 
 function SignInPage() {
 	const navigate = useNavigate();
 
 	const onLogin = () => {
+		makeUserLoggedIn();
 		navigate('/');
 	};
 

@@ -13,4 +13,9 @@ describe('HomePage', () => {
 		const homePage = await screen.findByTestId('home_page');
 		expect(homePage).toBeInTheDocument();
 	});
+	it('should have log out button', async () => {
+		render(<HomePage />);
+		const logOutButton = await screen.findByTestId('log_out_btn');
+		expect(logOutButton).toBeInTheDocument();
+	});
 });

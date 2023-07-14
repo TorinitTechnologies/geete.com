@@ -199,7 +199,8 @@
 			"^@testUtils(.*)$": "<rootDir>/src/testUtils$1",
 			"^@middleware(.*)$": "<rootDir>/src/middleware$1",
 			"^@services(.*)$": "<rootDir>/src/services$1",
-			"axios": "axios/dist/node/axios.cjs"
+			"axios": "axios/dist/node/axios.cjs",
+			"^@utils(.*)$": "<rootDir>/src/utils$1"
 		},
 		"moduleFileExtensions": [
 			"web.js",

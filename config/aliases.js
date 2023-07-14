@@ -9,6 +9,7 @@ const getAliases = () => {
 		'@testUtils': path.resolve(__dirname, '../src/testUtils'),
 		'@middleware': path.resolve(__dirname, '../src/middleware'),
 		'@services': path.resolve(__dirname, '../src/services'),
+		'@utils': path.resolve(__dirname, '../src/utils'),
 	};
 };
 
