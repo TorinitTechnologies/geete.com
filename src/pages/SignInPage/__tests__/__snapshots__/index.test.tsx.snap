@@ -117,5 +117,16 @@ exports[`SignInPage renders correctly 1`] = `
   >
     Login
   </button>
+  <button
+    data-testid="toggle_button"
+    onClick={[Function]}
+  >
+    Toggle
+  </button>
+  <label
+    data-testid="counter_label"
+  >
+    0
+  </label>
 </div>
 `;

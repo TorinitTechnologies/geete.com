@@ -6,10 +6,11 @@ import Input from '@atoms/Input';
 
 import { makeUserLoggedIn } from '@utils/authUtils/index';
 import { getLoginSchema } from './helper';
+import { useState } from 'react';
 
 function SignInPage() {
 	const navigate = useNavigate();
-
+	const [count, setCount] = useState(0);
 	const onLogin = () => {
 		makeUserLoggedIn();
 		navigate('/');
@@ -57,6 +58,15 @@ function SignInPage() {
 				text={'Login'}
 				onClick={handleSubmit}
 			/>
+			<button
+				data-testid={'toggle_button'}
+				onClick={() => {
+					setCount(count + 1);
+				}}
+			>
+				Toggle
+			</button>
+			<label data-testid={'counter_label'}>{count}</label>
 		</div>
 	);
 }
