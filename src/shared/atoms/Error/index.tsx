@@ -8,7 +8,7 @@ const Error = (props: ErrorProps) => {
 			<FormHelperText
 				data-testid={dataTestId}
 				id={id}
-				style={{ width: '100%', color: 'red' }}
+				style={{ width: '100%', color: 'red', position: 'absolute' }}
 			>
 				{text}
 			</FormHelperText>

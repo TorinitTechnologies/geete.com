@@ -52,7 +52,7 @@ exports[`SignInPage renders correctly 1`] = `
             data-testid="email"
             style={
               Object {
-                "marginTop": 10,
+                "marginTop": 30,
               }
             }
           >
@@ -101,7 +101,7 @@ exports[`SignInPage renders correctly 1`] = `
             data-testid="password"
             style={
               Object {
-                "marginTop": 10,
+                "marginTop": 30,
               }
             }
           >
@@ -164,6 +164,11 @@ exports[`SignInPage renders correctly 1`] = `
             onTouchEnd={[Function]}
             onTouchMove={[Function]}
             onTouchStart={[Function]}
+            style={
+              Object {
+                "marginTop": 50,
+              }
+            }
             tabIndex={0}
             title="Login"
             type="button"

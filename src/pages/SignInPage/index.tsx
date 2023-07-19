@@ -76,7 +76,7 @@ const SignInPage = () => {
 								error={(touched.email && errors.email) || ''}
 								onChange={handleChange}
 								fullWidth
-								style={{ marginTop: 10 }}
+								style={{ marginTop: 30 }}
 							/>
 							<Input
 								id={'password'}
@@ -89,7 +89,7 @@ const SignInPage = () => {
 								errorDataTestId={'password_error'}
 								error={(touched.password && errors.password) || ''}
 								fullWidth
-								style={{ marginTop: 10 }}
+								style={{ marginTop: 30 }}
 							/>
 							<Button
 								id={'login'}
@@ -100,6 +100,7 @@ const SignInPage = () => {
 								text={'Login'}
 								onClick={handleSubmit}
 								sx={{ mt: 3, mb: 2 }}
+								style={{ marginTop: 50 }}
 								fullWidth
 							/>
 						</Box>
