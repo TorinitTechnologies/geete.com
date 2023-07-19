@@ -33,7 +33,7 @@ const SignInPage = () => {
 				<Grid
 					item
 					xs={false}
-					sm={4}
+					sm={6}
 					md={7}
 					sx={{
 						backgroundImage:
@@ -43,7 +43,7 @@ const SignInPage = () => {
 						backgroundPosition: 'center',
 					}}
 				/>
-				<Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+				<Grid item xs={12} sm={6} md={5} component={Paper} elevation={0}>
 					<Box
 						sx={{
 							my: 8,

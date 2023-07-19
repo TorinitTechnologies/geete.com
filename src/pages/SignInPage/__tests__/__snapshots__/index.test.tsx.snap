@@ -9,10 +9,10 @@ exports[`SignInPage renders correctly 1`] = `
     className="MuiGrid-root MuiGrid-container css-1jrn2fe-MuiGrid-root"
   >
     <div
-      className="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-4 MuiGrid-grid-md-7 css-1io5csw-MuiGrid-root"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-6 MuiGrid-grid-md-7 css-191qgkh-MuiGrid-root"
     />
     <div
-      className="MuiPaper-root MuiPaper-elevation MuiPaper-elevation6 MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8 MuiGrid-grid-md-5 css-gadse4-MuiPaper-root-MuiGrid-root"
+      className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-5 css-fq6l8m-MuiPaper-root-MuiGrid-root"
     >
       <div
         className="MuiBox-root css-1y8ugea"

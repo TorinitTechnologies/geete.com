@@ -5,11 +5,7 @@ const Error = (props: ErrorProps) => {
 	const { id, text, dataTestId } = props;
 	return (
 		<>
-			<FormHelperText
-				data-testid={dataTestId}
-				id={id}
-				style={{ width: '100%', color: 'red', position: 'absolute' }}
-			>
+			<FormHelperText data-testid={dataTestId} id={id} style={{ color: 'red' }}>
 				{text}
 			</FormHelperText>
 		</>
