@@ -2,7 +2,7 @@
 
 exports[`SignInPage renders correctly 1`] = `
 <div
-  className="sc-dkPulx"
+  className="sc-dkHyXG"
   data-testid="sign_in_page"
 >
   <main
@@ -48,7 +48,7 @@ exports[`SignInPage renders correctly 1`] = `
           }
         >
           <div
-            className="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root sc-gsDKeI css-wb57ya-MuiFormControl-root-MuiTextField-root"
+            className="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root sc-gsMHZj css-wb57ya-MuiFormControl-root-MuiTextField-root"
             data-testid="email"
             style={
               Object {
@@ -97,7 +97,7 @@ exports[`SignInPage renders correctly 1`] = `
             </div>
           </div>
           <div
-            className="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root sc-gsDKeI css-wb57ya-MuiFormControl-root-MuiTextField-root"
+            className="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root sc-gsMHZj css-wb57ya-MuiFormControl-root-MuiTextField-root"
             data-testid="password"
             style={
               Object {
@@ -146,7 +146,7 @@ exports[`SignInPage renders correctly 1`] = `
             </div>
           </div>
           <button
-            className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth sc-bdvumH css-1vhaqj4-MuiButtonBase-root-MuiButton-root"
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth sc-bcHOTY css-1vhaqj4-MuiButtonBase-root-MuiButton-root"
             data-testid="login_button"
             disabled={false}
             id="login"
