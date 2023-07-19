@@ -1,7 +1,18 @@
 import { StyledButton } from './styles';
 
 function CustomButton(props: ButtonProps) {
-	const { title, variant, text, onClick, dataTestId, id, name } = props;
+	const {
+		title,
+		variant,
+		text,
+		onClick,
+		dataTestId,
+		id,
+		name,
+		sx,
+		fullWidth,
+		style,
+	} = props;
 	return (
 		<StyledButton
 			title={title}
@@ -10,6 +21,9 @@ function CustomButton(props: ButtonProps) {
 			id={id}
 			name={name}
 			data-testid={dataTestId}
+			sx={sx}
+			fullWidth={fullWidth}
+			style={style}
 		>
 			{text}
 		</StyledButton>

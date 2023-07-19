@@ -10,4 +10,6 @@ declare interface InputProps {
 	error?: string;
 	errorDataTestId?: string;
 	onChange: (e: React.ChangeEvent<HTMLElement>) => void;
+	fullWidth?: boolean;
+	style?: React.CSSProperties;
 }

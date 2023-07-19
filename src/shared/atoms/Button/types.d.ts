@@ -8,4 +8,7 @@ interface ButtonProps {
 	dataTestId: string;
 	id: string;
 	name: string;
+	sx?: SxProps<Theme>;
+	fullWidth?: boolean;
+	style?: React.CSSProperties;
 }

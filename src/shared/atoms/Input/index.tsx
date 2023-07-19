@@ -13,6 +13,8 @@ function Input(props: InputProps) {
 		error,
 		errorDataTestId,
 		onChange,
+		fullWidth,
+		style,
 	} = props;
 	return (
 		<>
@@ -26,6 +28,8 @@ function Input(props: InputProps) {
 				inputProps={inputProps}
 				error={!!error}
 				onChange={onChange}
+				fullWidth={fullWidth}
+				style={style}
 			/>
 			{error && (
 				<Error id={'error'} dataTestId={errorDataTestId} text={error} />
