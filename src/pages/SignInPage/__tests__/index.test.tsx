@@ -149,19 +149,4 @@ describe('SignInPage', () => {
 			await waitFor(() => expect(mockedUsedNavigate).toBeCalledWith('/'));
 		}
 	});
-
-	it('should have toggle button and it should render incremented count on click ', async () => {
-		// render(
-		// 	<BrowserRouter>
-		// 		<ReduxWrapper>
-		// 			<SignInPage />
-		// 		</ReduxWrapper>
-		// 	</BrowserRouter>
-		// );
-		// const toggleButton = await screen.findByTestId('toggle_button');
-		// const label=await screen.findByTestId('counter_label')
-		// const initialContent=label.textContent || '0'
-		// await fireEvent.click(toggleButton)
-		// expect(parseInt(label.textContent||'0')).toEqual(parseInt(initialContent)+1)
-	});
 });
